@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/css/reset.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>Javascript Jeopardy</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="highest-score">
+      <a href="highscores.html">Your High Scores</a>
+    </div>
+    <div class="timer" id="timer">
+      <p>Timer : <span id="count">0</span></p>
+    </div>
+  </header>
+
+  <main class="wrapper">
+    <!-- Home Screen -->
+    <div id="home-screen" class="begin">
+      <h1>Javascript Jeopardy</h1>
+      <p>Hello! For this quiz, you'll be provided 15 seconds to answer each question that are related to Javascript. I wish you the best of luck!</p>
+      <button id="begin">Begin!</button>
+    </div>
+
+    <!-- Questionaire -->
+    <div id="questionthing-screen" class="hide">
+      <div class="the-header">
+        <h2 id="questions-made"></h2>
+        <p><span id="yeah">0</span>/5</p>
+      </div>
+      <div id="choices" class="choices"></div>
+    </div>
+
+    <!-- Completed Quiz -->
+    <div id="complete-screen" class="hide">
+      <h2>You're done!</h2>
+      <p>Your final score is <span id="ending-score"></span>.</p>
+      <p>
+        Enter Initials: <input type="text" id="initials" />
+        <button id="submit">Submit</button>
+      </p>
+    </div>
+
+    <!-- Answers -->
+    <div id="answers"></div>
+  </main>
+
+  <script src="./assets/js/mainscript.js"></script>
+</body>
+
+</html>
